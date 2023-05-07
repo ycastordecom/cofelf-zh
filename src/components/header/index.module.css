@@ -1,0 +1,90 @@
+.header {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+.header .logo {
+  width: 220px;
+  height: 60px;
+  margin-left: 50px;
+}
+.header > div {
+  display: flex;
+}
+.header > div .sing {
+  margin-right: 50px;
+  cursor: pointer;
+  width: 220px;
+  height: 44px;
+  background: linear-gradient(90deg, #8c32e1 0%, #5112f1 100%);
+  font-size: 27px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  line-height: 44px;
+  font-family: '阿里包巴惠普体BOLD';
+  border-radius: 44px;
+}
+.header > div .sing:hover {
+  background: #fff;
+  color: #5112f1;
+}
+.header .select {
+  cursor: pointer;
+}
+.header .select .menu {
+  width: 60px;
+  height: 46px;
+  margin: 0 100px;
+  cursor: pointer;
+}
+.header .select > div:nth-child(2) {
+  background-color: #3b3c4f;
+  position: absolute;
+  top: 70px;
+  display: none;
+  border-radius: 20px;
+  right: 50px;
+  text-transform: uppercase;
+}
+.header .select > div:nth-child(2) > div {
+  height: 50px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.header .select > div:nth-child(2) > div:hover {
+  background-color: #5235ec;
+  color: #fff;
+}
+.header .select:hover > div:nth-child(2) {
+  display: block;
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
